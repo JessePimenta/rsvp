@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <title>Daily UI 028</title>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+        <meta property="og:image" content="https://puu.sh/rOw3q/2b2cf0826c.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="address">
+                    <p>Private Selection presents: Arkitect, Dreams, Anastasia Kristensen & Club Noid</p>
+                </div>
+                <div class="address">
+                    <p>March 11th, 2017<br>
+                        <a target="_blank" href='https://www.residentadvisor.net/event.aspx?935491'>Tickets</a>
+                    </p>
+                </div>
+                <h1>RSVP</h1>
+                <div class="thanks">
+                    <p>Thanks. You'll receive the address the night of the event.</p>
+                </div>
+                <div class="pen"></div>
+                <form id="contact_form" action="https://formspree.io/party@privateselectionrecords.net" method="POST" enctype="multipart/form-data">
+                    <div class="row">
+                        <label for="name">Your name:</label><br/>
+                        <div class="inputwrap">
+                            <input id="name" class="input" placeholder='who are you?' name="name" type="text" value="" size="30"></input>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="email">Your email:</label><br/>
+                        <div class="inputwrap">
+                            <input id="email" class="input" name="_replyto" type="text" placeholder='name@email.com' value="" size="30"/>
+                          <div class="bar"></div>
+                        </div>
+                        <br/>
+                    </div>
+                    <div class="row">
+                        <label for="message">Link To Your Most Used Social Media Account:</label><br/>
+                        <div class="inputwrap">
+                          <input type="textarea" name="social" placeholder='facebook, instagram etc.'/>
+                        <div class="bar"></div>
+                        </div>
+                    </div>
+                    <div class="btnwrap"><input id="submit_button" type="submit" value="Send"/></div>
+                </form>
+            </div>
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+        <!-- <script src="js/index.js"></script> -->
+
+    </body>
+</html>
