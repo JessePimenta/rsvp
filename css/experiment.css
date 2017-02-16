@@ -4,6 +4,10 @@
   -moz-perspective: 1600px;
   -moz-perspective-origin: 50% 400px;
   perspective: 1600px;
+  opacity: 0.95;
+  /* overflow-y: hidden; */
+  /* background-color: black; */
+  transform: translate3d(20px,-130px,30px);
   perspective-origin: 50% 200px;
 }
 
@@ -19,6 +23,12 @@
   transition: transform .5s linear;
   transform-style: preserve-3d !important;
   margin-top: 100px;
+  /*-webkit-filter: blur(0px)*/
+}
+
+@font-face {
+  src:url(/css/circular/lineto-circular-book.woff);
+  font-family: circular-book;
 }
 
 .face {
@@ -28,7 +38,7 @@
   width: 448px;
   padding: none;
   background-color: rgba(0, 0, 0, 1);
-  font-family: 'Inconsolata',;
+  font-family: 'circular-book',;
   font-size: 12px;
   text-align: center;
   line-height: 1em;
@@ -75,7 +85,8 @@
 }
 
 body {
-  background-color: #000000;
+    background-image: url(../images/original-blk.jpg);
+    background-size: contain;
 }
 
 a {
@@ -103,16 +114,16 @@ iframe {
 
 .btnNav {
   display:inline-block;
-  font-family: Inconsolata;
+  font-family: 'circular-book';
   color: #ffffff;
-  font-size: 14px;
+  font-size: 24px;
   background: #000000;
   padding: 6px 13px 6px 13px;
   text-decoration: none;
 }
 .btn {
   display: block !important;
-  font-family: Inconsolata;
+  font-family: 'circular-book';
   color: #ffffff;
   font-size: 14px;
   background: #000000;
@@ -129,7 +140,7 @@ iframe {
 
 .smlbtn{
   display:block;
-  font-family: Inconsolata;
+  font-family: 'circular-book';
   color: #ffffff;
   font-size: 12px;
   background: #000000;

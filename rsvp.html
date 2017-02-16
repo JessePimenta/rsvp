@@ -1,13 +1,41 @@
+
+<?php
+
+//validate
+if ($_POST) {
+//send confirmation email (or insert into database, etc...)
+    echo 'Sent'; die;
+    mail('party@privateselectionrecords.net','RSVP');
+}
+//
+
+?>
+
 <!DOCTYPE html>
 <html >
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
-        <title>Daily UI 028</title>
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+        <title>RSVP</title>
         <meta property="og:image" content="https://puu.sh/rOw3q/2b2cf0826c.png"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/favicon.png" />
     </head>
+    <!--style the error message-->
+<style type="text/css">
+.error {
+    display: block;
+    color: red;
+    font-style: italic;
+}
+#message {
+    display:none;
+    font-size:15px;
+    font-weight:bold;
+    color:#333333;
+}
+</style>
 
     <body>
         <div class="wrapper">
@@ -25,26 +53,26 @@
                     <p>Thanks. You'll receive the address the night of the event.</p>
                 </div>
                 <div class="pen"></div>
-                <form id="contact_form" action="https://formspree.io/party@privateselectionrecords.net" method="POST" enctype="multipart/form-data">
+                <form id="contact_form" action="mailer.php" method="POST" enctype="multipart/form-data">
                     <div class="row">
-                        <label for="name">Your name:</label><br/>
+                        <label for="name">Your Name</label><br/>
                         <div class="inputwrap">
                             <input id="name" class="input" placeholder='who are you?' name="name" type="text" value="" size="30"></input>
                             <div class="bar"></div>
                         </div>
                     </div>
                     <div class="row">
-                        <label for="email">Your email:</label><br/>
+                        <label for="email">Your Email</label><br/>
                         <div class="inputwrap">
-                            <input id="email" class="input" name="_replyto" type="text" placeholder='name@email.com' value="" size="30"/>
+                            <input id="email" class="input" name="email" type="text" placeholder='name@email.com' value="" size="30"/>
                           <div class="bar"></div>
                         </div>
                         <br/>
                     </div>
                     <div class="row">
-                        <label for="message">Link To Your Most Used Social Media Account:</label><br/>
+                        <label for="message">Social Media Account</label><br/>
                         <div class="inputwrap">
-                          <input type="textarea" name="social" placeholder='facebook, instagram etc.'/>
+                          <input type="textarea" name="message" placeholder='facebook, instagram etc.'/>
                         <div class="bar"></div>
                         </div>
                     </div>
@@ -52,9 +80,9 @@
                 </form>
             </div>
         </div>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 
-        <!-- <script src="js/index.js"></script> -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+        <script src="js/index.js"></script>
 
     </body>
 </html>

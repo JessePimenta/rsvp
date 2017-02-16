@@ -12,7 +12,10 @@ for(var i = 0, l = props.length; i < l; i++) {
 
 //initialize jquery on page load
 $(document).ready(function(){
-
+  // $('#cube').delay(800).queue(function (next) {
+  //   $(this).css("filter", "blur(0px)");
+  //   next();
+  // });
 
 var xAngle = 0, yAngle = 0;
 $('body').keydown(function(evt) {
