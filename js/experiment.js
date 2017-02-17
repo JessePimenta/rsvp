@@ -10,12 +10,27 @@ for(var i = 0, l = props.length; i < l; i++) {
     }
 }
 
+// mobile redirect
+// if ($(window).width() <= 800) {
+//   $( ".mobile-content-container.instafeed-mobile" ).html( "<div id='instafeed' style='overflow: scroll'></div>" );
+//   console.log('less than 800px')
+//   // window.location = "http://privateselectionrecords.net/rsvp";
+//
+// }
+
+
 //initialize jquery on page load
 $(document).ready(function(){
-  // $('#cube').delay(800).queue(function (next) {
-  //   $(this).css("filter", "blur(0px)");
-  //   next();
-  // });
+//
+//   $(window).resize(function() {
+//   if ($(window).width() >= 570) {
+//     $('#instafeed').remove();
+//     $( "<div id='instafeed' style='overflow: scroll'></div>" ).appendTo(".face.three");
+//   }
+//  else {
+//     console.log('More than 400 so no appending.');
+//  }
+// });
 
 var xAngle = 0, yAngle = 0;
 $('body').keydown(function(evt) {

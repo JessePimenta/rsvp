@@ -99,6 +99,7 @@ body .wrapper {
 @media all and (max-width:375px) {
   body .wrapper {
     font-size: 13px;
+    /*left: 48%;*/
   }
 
   body .wrapper .container #contact_form .btnwrap {
@@ -141,7 +142,7 @@ body .wrapper .container {
   border: 2px solid white;
   position: absolute;
   top: 15%;
-  left: 50%;
+  left: 48%;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transform: translateX(-50%);

@@ -767,7 +767,6 @@ body {
     line-height: 1.42857143;
     color: #333;
     /* background-color: #fff; */
-    border-top: 0px solid black;
 }
 button, input, select, textarea {
     font-family: inherit;
@@ -778,10 +777,11 @@ a {
     color: #337ab7;
     text-decoration: none;
 }
-a:focus, a:hover {
-  color: #5CB2FF;
+/*nav a:focus, a:hover {
+  color: #0a0a0a;
   text-decoration: underline;
-}
+  background: white;
+}*/
 a:focus {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -873,10 +873,7 @@ hr {
     font-size: 30px;
 }
 .h3, h3 {
-    font-size: 74px;
-    font-family: "circular-book";
-    font-weight: 900;
-    /* margin-top: -130px; */
+    font-size: 24px;
 }
 .h4, h4 {
     font-size: 18px;
@@ -1753,9 +1750,9 @@ legend {
     border-bottom: 1px solid #e5e5e5;
 }
 label {
-    display: inline-block;
+    display: block;
     max-width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     font-weight: 700;
 }
 input[type=search] {

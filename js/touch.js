@@ -24,10 +24,9 @@ $(function(){
             el: $('.cube')[0],
             move: function(coords) {
                 if(coords) {
-                    if(typeof coords.x === "number") this.x = coords.x;
-                    if(typeof coords.y === "number") this.y = coords.y;
+                    if(typeof coords.x === "number") this.x = coords.x
+                    if(typeof coords.y === "number") this.y = coords.y
                 }
-
                 this.el.style[transformProp] = "rotateX("+this.x+"deg) rotateY("+this.y+"deg)";
             },
             reset: function() {

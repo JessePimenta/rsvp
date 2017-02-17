@@ -9,6 +9,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+    text-rendering: geometricPrecision;
 }
 
 ol, ul {
@@ -145,12 +146,13 @@ body {
     line-height: 1.5em;/* 16px/24px default */
     color: #666;
     background: #000;
-    font-family: "Andale Mono", Arial, Helvetica, sans-serif, "Inconsolata";
+    font-family: "Andale Mono", Arial, Helvetica, sans-serif, circular-book;
     font-weight: 200;
+    overflow: hidden;
 }
 
 textarea, .sans {
-    font-family: "Andale Mono", Arial, Helvetica, sans-serif, "Inconsolata";
+    font-family: "Andale Mono", Arial, Helvetica, sans-serif, circular-book;
 }
 
 h1, h2, h3, h4, h5, h6 {
