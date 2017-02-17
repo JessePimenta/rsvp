@@ -44,6 +44,10 @@
 }
 
 @media all and (max-width:570px) {
+
+  #cube {
+    transform: rotateX(0deg) rotateY(0deg) !important;
+  }
 .one, .two, .four, .five, .six {
   display: none;
 }
